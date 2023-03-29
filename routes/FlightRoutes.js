@@ -14,6 +14,9 @@ router.get('/', FlightController.index)
 // Setup a "new" route for creating fruit
 router.get('/new', FlightController.new)
 
+// Setup a "new" route for creating fruit
+// router.get('/new2', FlightController.new2)
+
 //setup a "Create" route for Posts to create new flight inforation
 router.post('/', FlightController.create)
 

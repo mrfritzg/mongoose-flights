@@ -30,6 +30,18 @@ module.exports.new = (req, res) => {
 	res.render('new', {departsDate});
 }
 
+module.exports.new2 = (req, res) => {
+    //create an in-memory flight like this:
+    const newFlight = new Flights();
+	// Obtain the default date
+    console.log(newFlight)
+	const dt = newFlight.departs;
+	// Format the date for the value attribute of the input
+    console.log(dt)
+	const departsDate = dt.toISOString().slice(0, 16);
+	res.render('new2', {departsDate});
+}
+
 
 // POST /flights
 module.exports.create = async  (req, res) => {

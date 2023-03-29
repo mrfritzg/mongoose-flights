@@ -25,6 +25,8 @@ function Index(props) {
                 )}
             </ul>
             <a href="/flights/New">Add...</a>
+            <br />
+            {/* <a href="/flights/New2">Add...</a> */}
             <br/><br/><br/>
 
             </DefaultLayout>
